@@ -50,6 +50,7 @@ nav {
     padding: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid black;
+    display: flex;
 }
 
 nav a {
@@ -69,4 +70,19 @@ nav a {
     border-radius: 50%;
     background-position: 50% 50%;
     background-size: cover;
+}
+
+#user-details {
+    text-align: right;
+    width: 50%;
+}
+
+#username {
+    position: relative;
+    top: -15px;
+    padding-right: 5px;
+}
+
+#links {
+    width: 50%;
 }

@@ -151,6 +151,9 @@ let checkLogin = () => {
     <span id="dp" style="background-image: url('${sessionStorage.profileImg}')"></span>
     `
   }
+  else {
+    navContent = "";
+  }
   // render our logged in elements
   userDetails.innerHTML = navContent;
 }
