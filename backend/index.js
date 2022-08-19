@@ -29,9 +29,6 @@ app.listen(port, () => {
 });
 
 // let's connect to mongoDB 
-// cluster name: mycluster 
-// username: billyridgway
-// password: R1dgway1 
 mongoose.connect(
   `mongodb+srv://${config.username}:${config.password}@mycluster.p4iym.mongodb.net/?retryWrites=true&w=majority`,
   // .then is a chaining method used with promises
