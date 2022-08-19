@@ -1,0 +1,20 @@
+{
+  "name": "mongo-db-practice",
+  "version": "1.0.0",
+  "description": "We're practicing MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "go": "nodemon index.js"
+  },
+  "author": "Billy",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
