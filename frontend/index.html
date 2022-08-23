@@ -17,8 +17,6 @@
   <nav>
     <div id="links">
       <a href="index.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="signup.html">Signup</a>
     </div>
     <div id="user-details"></div>
   </nav>
@@ -42,7 +40,7 @@
   <!-- Button trigger modal -->
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -50,13 +48,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img id="logo" src="https://images.vectorhq.com/images/previews/da2/monsters-inc-mike-wazowski-psd-431270.png"
-            alt="">
+          <div id="image-preview"></div>
           <form id="productForm">
             <h1>Update Form</h1>
-            <label for="productId">Enter Product Id:</label>
+            <!-- <label for="productId">Enter Product Id:</label>
             <input type="text" name="inputID" id="productId">
-            <br><br>
+            <br><br> -->
 
             <label for="productName">Enter name of the product</label>
             <input type="text" id="productName" name="producttName">

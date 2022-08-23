@@ -86,3 +86,7 @@ nav a {
 #links {
     width: 50%;
 }
+
+#image-preview img {
+    width: 100%;
+}

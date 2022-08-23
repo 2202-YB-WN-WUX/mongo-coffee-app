@@ -178,6 +178,7 @@ app.post('/loginUser', (req, res) => {
   User.findOne({ username: req.body.username }, (err, userResult) => {
     if (userResult) {
       if (bcrypt.compareSync(req.body.password, userResult.password)) {
+        // success
         res.send(userResult);
       } else {
         res.send('not authorised');
@@ -188,3 +189,18 @@ app.post('/loginUser', (req, res) => {
   }) // Find one ends
 }); // end of post login
 
+
+app.get('/coffee/:id', (req, res) => {
+  const coffeeId = req.params.id;
+  Coffee.findById(coffeeId, (err, coffee) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(coffee);
+    }
+  })
+})
+
+// What we'll be covering today:
+
+// - Editing coffees via the bootstrap modal
